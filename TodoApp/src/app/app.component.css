@@ -1,0 +1,10 @@
+/* app.component.css */
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+}
+
+.btn-danger {
+  color: #eb1313;
+}

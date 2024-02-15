@@ -1,0 +1,16 @@
+<!-- app.component.html -->
+<div class="container">
+  <h1>Todo List</h1>
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" [(ngModel)]="newTodo" placeholder="Add new todo item">
+    <div class="input-group-append">
+      <button class="btn btn-primary" (click)="addTodo()">Add</button>
+    </div>
+  </div>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let todo of todos">
+      {{ todo }}
+      <button class="btn btn-danger btn-sm float-right" (click)="removeTodo(todo)">Remove</button>
+    </li>
+  </ul>
+</div>
